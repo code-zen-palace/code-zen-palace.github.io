@@ -33,7 +33,8 @@
 <p>Tiny Acres Plus is a one-time purchase processed by Google Play. Google provides us with a purchase token and product identifier so the app can unlock Plus; Google's handling of payment data is governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. We do not receive your payment details.</p>
 
 <h2>5. Crash and performance data</h2>
-<p>The app does not include its own crash-reporting service. Google Play may collect anonymised crash and performance statistics (Android vitals) from devices whose owners have opted into usage and diagnostics sharing, and shares only aggregate reports with us. The ads SDK described in section 2 also collects performance diagnostics such as app launch time. If we add a crash-reporting service, we will update this policy before that version is released.</p>
+<p>When the app crashes or hits a serious error, it sends a crash report to Firebase Crashlytics (Google LLC) so we can find and fix the problem. A report contains the technical details of the error (the code location and error message), the app version, your phone's model, Android version and free memory and storage at the time, and a random Crashlytics installation ID that is not linked to you and changes if you reinstall the app. It contains no game progress, no name, no email and no advertising ID. We use these reports only to keep the game stable; they are kept for 90 days and then deleted by Crashlytics. See <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</p>
+<p>Google Play may also collect anonymised crash and performance statistics (Android vitals) from devices whose owners have opted into usage and diagnostics sharing, and shares only aggregate reports with us. The ads SDK described in section 2 also collects performance diagnostics such as app launch time.</p>
 
 <h2>6. Analytics</h2>
 <p>The app does not include a separate analytics service. Google AdMob may use the information described in section 2 for analytics about ad performance. If we add an analytics service, we will update this policy before that version is released.</p>
@@ -42,12 +43,13 @@
 <p>Tiny Acres is not directed to children under 13 (or the applicable age of digital consent in your country) and we do not knowingly collect personal information from them. The app is listed for ages 13 and over. If you believe a child has provided personal information through the ads SDK, contact us and we will help you have it removed.</p>
 
 <h2>8. Data sharing and sale</h2>
-<p>We do not sell personal information. The only third parties that receive data from the app are Google (ads, billing, platform diagnostics) as described above. We do not share data with data brokers.</p>
+<p>We do not sell personal information. The only third parties that receive data from the app are Google (ads, billing, crash reports, platform diagnostics) as described above. We do not share data with data brokers.</p>
 
 <h2>9. Retention</h2>
 <table>
 <tr><th>Data</th><th>Where</th><th>Retained</th></tr>
 <tr><td>Game progress and settings</td><td>Your device; your own Google account backup if Android backup is on</td><td>Until you delete it or uninstall; backups as set in your Google account</td></tr>
+<tr><td>Crash reports</td><td>Firebase Crashlytics (Google)</td><td>90 days</td></tr>
 <tr><td>Advertising data</td><td>Google AdMob</td><td>Per Google's retention policies</td></tr>
 <tr><td>Purchase record</td><td>Google Play</td><td>Per Google Play's policies; needed to restore your purchase</td></tr>
 </table>
