@@ -1,0 +1,156 @@
+/* Tiny Acres site: the app's look (home screen sky, Fredoka titles, white
+   rounded cards). Colours from app/lib/theme/home_look.dart. The font is
+   served from this site (SIL OFL 1.1, fonts/OFL.txt), not Google Fonts, so
+   visitors' addresses are not sent to a third party. */
+@font-face {
+  font-family: "Fredoka";
+  src: url("fonts/Fredoka-Variable.ttf") format("truetype");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+:root {
+  --sky-1: #bfe3fa;
+  --sky-2: #e6f4ee;
+  --sky-3: #fbf5e8;
+  --ink: #1f4a33;
+  --text: #24332a;
+  --muted: #5a6b5e;
+  --card: #ffffff;
+  --line: #e4ddd0;
+  --green: #2f8656;
+  --green-2: #23705f;
+  --pill: rgba(255, 255, 255, 0.7);
+  --shadow: 0 6px 22px rgba(31, 74, 51, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sky-1: #1c2b45;
+    --sky-2: #1b2230;
+    --sky-3: #1b1f22;
+    --ink: #e4f2e7;
+    --text: #dde6df;
+    --muted: #a9b8ad;
+    --card: #262d33;
+    --line: #38424a;
+    --green: #3d9a68;
+    --green-2: #2e7d6e;
+    --pill: rgba(255, 255, 255, 0.08);
+    --shadow: 0 6px 22px rgba(0, 0, 0, 0.35);
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { background: var(--sky-3); }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, var(--sky-1) 0%, var(--sky-2) 45%, var(--sky-3) 100%) fixed;
+}
+
+a { color: var(--green); }
+
+h1, h2, h3, .brand, .btn {
+  font-family: "Fredoka", system-ui, sans-serif;
+  color: var(--ink);
+}
+
+h1 { font-size: 2rem; font-weight: 700; line-height: 1.2; margin: 0.2em 0 0.4em; }
+h2 { font-size: 1.3rem; font-weight: 650; line-height: 1.3; margin: 1.8em 0 0.4em; }
+
+/* Header: the three-hex logo and the name. */
+.top {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 22px 20px 4px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.brand svg { width: 40px; height: 40px; flex: none; }
+
+/* Content on a white rounded card. */
+main {
+  max-width: 760px;
+  margin: 12px auto 0;
+  padding: 0 16px;
+}
+.card {
+  background: var(--card);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: 28px 26px 30px;
+}
+.card > h1:first-child { margin-top: 0; }
+.meta { color: var(--muted); font-size: 0.95rem; }
+
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; margin: 0.6em 0; }
+th, td { border-bottom: 1px solid var(--line); padding: 10px 8px; text-align: left; vertical-align: top; }
+th { color: var(--ink); font-weight: 650; }
+
+/* Green pill buttons, like the app's. */
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #fff;
+  text-decoration: none;
+  padding: 13px 24px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--green), var(--green-2));
+  box-shadow: 0 4px 14px rgba(47, 134, 86, 0.35);
+}
+
+/* Home page hero. */
+.hero { text-align: center; padding: 18px 8px 8px; }
+.hero img.icon { width: 112px; height: 112px; border-radius: 26px; box-shadow: var(--shadow); }
+.hero .lead { font-size: 1.15rem; color: var(--muted); max-width: 540px; margin: 0.4em auto 1.2em; }
+/* Three in a row at any width. */
+.shots {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 28px 0 8px;
+}
+.shots img {
+  width: calc((100% - 24px) / 3);
+  max-width: 220px;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+.facts { list-style: none; padding: 0; margin: 1.2em 0 0; }
+.facts li { padding: 6px 0; }
+
+/* Footer links as soft pills. */
+footer {
+  max-width: 760px;
+  margin: 26px auto 40px;
+  padding: 0 16px;
+  text-align: center;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+footer nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 10px; }
+footer nav a {
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--pill);
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+@media (max-width: 520px) {
+  .card { padding: 22px 18px 24px; border-radius: 20px; }
+  h1 { font-size: 1.7rem; }
+}

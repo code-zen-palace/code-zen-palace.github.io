@@ -5,26 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tiny Acres — a calm daily tile puzzle</title>
 <meta name="description" content="Tiny Acres is a relaxing daily hex-tile puzzle for Android. Same tiles for everyone, no lives, no timers.">
-<style>
-  :root{--bg:#f8f3e9;--fg:#2f4a36;--muted:#5a6b5e;--accent:#5f8f6c}
-  body{margin:0;font:17px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--fg)}
-  main{max-width:680px;margin:0 auto;padding:48px 20px}
-  h1{font-size:2.2rem;margin:.2em 0}
-  p.lead{color:var(--muted);font-size:1.15rem}
-  a.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:12px 20px;border-radius:12px;font-weight:600}
-  footer{margin-top:48px;color:var(--muted);font-size:.9rem}
-  footer a{color:var(--muted)}
-</style>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
 </head>
 <body>
+<header class="top"><a class="brand" href="./"><svg viewBox="0 0 40 40" aria-hidden="true"><polygon points="19.40,17.10 11.43,21.70 3.47,17.10 3.47,7.90 11.43,3.30 19.40,7.90" fill="#5b9a68" stroke="#ffffff" stroke-width="1.6" stroke-linejoin="round"/><polygon points="36.53,17.10 28.57,21.70 20.60,17.10 20.60,7.90 28.57,3.30 36.53,7.90" fill="#6fb3dc" stroke="#ffffff" stroke-width="1.6" stroke-linejoin="round"/><polygon points="27.97,31.90 20.00,36.50 12.03,31.90 12.03,22.70 20.00,18.10 27.97,22.70" fill="#e8cb63" stroke="#ffffff" stroke-width="1.6" stroke-linejoin="round"/></svg>Tiny Acres</a></header>
 <main>
-  <h1>Tiny Acres</h1>
-  <p class="lead">Every day, a tiny new acre. The same stack of tiles for everyone; no lives, no timers, no way to lose.</p>
+<article class="card hero">
+  <img class="icon" src="icon.png" alt="Tiny Acres app icon" width="112" height="112">
+  <h1>A tiny new acre, every day</h1>
+  <p class="lead">A calm hex-tile puzzle. The same stack of tiles for everyone; no lives, no timers, no way to lose.</p>
   <p><a class="btn" href="https://play.google.com/store/apps/details?id=app.tinyacres.game">Get it on Google Play</a></p>
-  <p>Place hex tiles, match forests with forests and lakes with lakes, seal off regions for bonus points, beat the day's target, keep your streak and share your little map.</p>
-  <footer>
-    <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of use</a> · <a href="delete-data.html">Delete my data</a> · <a href="mailto:brandemak@gmail.com">brandemak@gmail.com</a>
-  </footer>
+  <div class="shots">
+    <img src="shots/01.jpg" alt="Little 3D hex tiles with trees, fields and water, a tile hovering over a glowing cell" width="540" height="960" loading="lazy">
+    <img src="shots/03.jpg" alt="Result: a Legendary medal, 63 of 59 points" width="540" height="960" loading="lazy">
+    <img src="shots/04.jpg" alt="Colourful home screen with today's acre done and a streak" width="540" height="960" loading="lazy">
+  </div>
+  <ul class="facts">
+    <li>🌲 Match forests with forests and lakes with lakes, and seal off regions for bonus points.</li>
+    <li>🎯 Beat the day's target, keep your streak, and share your little map.</li>
+    <li>🎵 Cozy acoustic music, seasons and festivals, dark mode.</li>
+    <li>📴 Plays fully offline.</li>
+  </ul>
+</article>
 </main>
+<footer>
+<nav><a href="./">Home</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="delete-data.html">Delete my data</a><a href="mailto:brandemak@gmail.com">Contact</a></nav>
+<div>© 2026 PrimeKamp LLC · Albuquerque, New Mexico, USA</div>
+</footer>
 </body>
 </html>
