@@ -1,7 +1,8 @@
-/* Tiny Acres site: the app's look (home screen sky, Fredoka titles, white
-   rounded cards). Colours from app/lib/theme/home_look.dart. The font is
-   served from this site (SIL OFL 1.1, fonts/OFL.txt), not Google Fonts, so
-   visitors' addresses are not sent to a third party. */
+/* PrimeKamp's site in Tiny Acres' look (home screen sky, Fredoka titles,
+   white rounded cards); the Big Deal pages in big-deal/ share it. Colours
+   from app/lib/theme/home_look.dart. The font is served from this site
+   (SIL OFL 1.1, fonts/OFL.txt), not Google Fonts, so visitors' addresses
+   are not sent to a third party. */
 @font-face {
   font-family: "Fredoka";
   src: url("fonts/Fredoka-Variable.ttf") format("truetype");
@@ -153,4 +154,18 @@ footer nav a {
 @media (max-width: 520px) {
   .card { padding: 22px 18px 24px; border-radius: 20px; }
   h1 { font-size: 1.7rem; }
+}
+
+/* A second game on the home page: its name, one line and its legal links. */
+.game { margin-top: 16px; }
+.game h2 { margin-top: 0; font-size: 1.6rem; }
+.game .lead { font-size: 1.15rem; color: var(--muted); margin: 0.2em 0 0.3em; }
+.game .meta { margin: 0 0 1em; }
+.links { display: flex; flex-wrap: wrap; gap: 8px; }
+.links a {
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 6px 14px;
+  border-radius: 999px;
 }
