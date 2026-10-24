@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img">
+  <title>PrimeKamp</title>
+  <rect width="32" height="32" rx="7" fill="#150F1F"/>
+  <g shape-rendering="crispEdges">
+    <rect x="19" y="3" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="15" y="5" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="15" y="7" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="17" y="7" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="13" y="9" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="15" y="9" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="17" y="9" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="11" y="11" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="13" y="11" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="15" y="11" width="2" height="2" fill="#FF8A2D"/>
+    <rect x="17" y="11" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="19" y="11" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="11" y="13" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="13" y="13" width="2" height="2" fill="#FF8A2D"/>
+    <rect x="15" y="13" width="2" height="2" fill="#FF8A2D"/>
+    <rect x="17" y="13" width="2" height="2" fill="#FF8A2D"/>
+    <rect x="19" y="13" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="9" y="15" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="11" y="15" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="13" y="15" width="2" height="2" fill="#FF8A2D"/>
+    <rect x="15" y="15" width="2" height="2" fill="#FFC83D"/>
+    <rect x="17" y="15" width="2" height="2" fill="#FFC83D"/>
+    <rect x="19" y="15" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="21" y="15" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="9" y="17" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="11" y="17" width="2" height="2" fill="#FF8A2D"/>
+    <rect x="13" y="17" width="2" height="2" fill="#FFC83D"/>
+    <rect x="15" y="17" width="2" height="2" fill="#FFC83D"/>
+    <rect x="17" y="17" width="2" height="2" fill="#FFC83D"/>
+    <rect x="19" y="17" width="2" height="2" fill="#FF8A2D"/>
+    <rect x="21" y="17" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="9" y="19" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="11" y="19" width="2" height="2" fill="#FF8A2D"/>
+    <rect x="13" y="19" width="2" height="2" fill="#FFC83D"/>
+    <rect x="15" y="19" width="2" height="2" fill="#FFC83D"/>
+    <rect x="17" y="19" width="2" height="2" fill="#FFC83D"/>
+    <rect x="19" y="19" width="2" height="2" fill="#FF8A2D"/>
+    <rect x="21" y="19" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="11" y="21" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="13" y="21" width="2" height="2" fill="#FF8A2D"/>
+    <rect x="15" y="21" width="2" height="2" fill="#FF8A2D"/>
+    <rect x="17" y="21" width="2" height="2" fill="#FF8A2D"/>
+    <rect x="19" y="21" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="13" y="23" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="15" y="23" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="17" y="23" width="2" height="2" fill="#FF4E5B"/>
+    <rect x="11" y="27" width="10" height="2" fill="#9A88A6"/>
+  </g>
+</svg>
