@@ -1,0 +1,31 @@
+{
+  "name": "PrimeKamp",
+  "legal_name": "PrimeKamp LLC",
+  "base_url": "https://primekampllc.com",
+  "email": "hello@primekampllc.com",
+  "registration": "A limited liability company registered in New Mexico, USA",
+  "address": {
+    "street": "1209 Mountain Road Pl NE, Ste N",
+    "city": "Albuquerque",
+    "region": "NM",
+    "postal_code": "87110",
+    "country": "USA",
+    "country_code": "US"
+  },
+  "copyright": "© 2026 PrimeKamp LLC · Albuquerque, New Mexico, USA",
+  "share_image": "/assets/og-image.png",
+  "share_image_alt": "The PrimeKamp logo, a pixel campfire, and the words Games worth gathering for, on a dark night background.",
+  "nav": [
+    { "label": "Games", "href": "/games/" },
+    { "label": "TravelCharika", "href": "/travelcharika/" },
+    { "label": "About", "href": "/about/" },
+    { "label": "Contact", "href": "/contact/" }
+  ],
+  "footer_nav": [
+    { "label": "Games", "href": "/games/" },
+    { "label": "TravelCharika", "href": "/travelcharika/" },
+    { "label": "About", "href": "/about/" },
+    { "label": "Contact", "href": "/contact/" },
+    { "label": "Legal", "href": "/legal/" }
+  ]
+}

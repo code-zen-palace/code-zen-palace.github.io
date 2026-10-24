@@ -1,0 +1,134 @@
+{
+  "products": [
+    {
+      "id": "tiny-acres",
+      "name": "Tiny Acres",
+      "kind": "game",
+      "page": "/tiny-acres/",
+      "pitch": "A calm daily hex-tile puzzle.",
+      "description": "The same stack of tiles for everyone; no lives, no timers, no way to lose.",
+      "icon": "/icon.png",
+      "channels": [
+        {
+          "store": "Google Play",
+          "platform": "Android",
+          "status": "live",
+          "url": "https://play.google.com/store/apps/details?id=app.tinyacres.game"
+        },
+        { "store": "App Store", "platform": "iPhone", "status": "coming" }
+      ],
+      "screenshots": [
+        { "src": "/shots/01.jpg", "alt": "Match edges. Close regions. Today's acre: hex tiles of forest, fields and water, with a forest region closed for five bonus points." },
+        { "src": "/shots/02.jpg", "alt": "Cosy by day or by night: the same board in dark mode." },
+        { "src": "/shots/03.jpg", "alt": "Beat the day's target: an acre complete, Legendary, 63 of 59 points." },
+        { "src": "/shots/04.jpg", "alt": "A new tiny acre every day: the home screen with today's acre done and a streak." },
+        { "src": "/shots/05.jpg", "alt": "Celebrate the seasons: the home screen dressed for Christmas." }
+      ],
+      "features": [
+        "Match forests with forests and lakes with lakes, and seal off regions for bonus points.",
+        "Beat the day's target, keep your streak, and share your little map.",
+        "Cozy acoustic music, seasons and festivals, and a dark mode.",
+        "Plays fully offline."
+      ],
+      "money": {
+        "title": "Fair and simple",
+        "text": "Free to play, with a few ads that never interrupt the daily acre. Tiny Acres Plus is one optional, one-time purchase that removes them. No subscription, no in-game currency, no loot boxes."
+      },
+      "legal": {
+        "privacy": "/privacy.html",
+        "terms": "/terms.html",
+        "delete_data": "/delete-data.html"
+      },
+      "support_email": "brandemak@gmail.com"
+    },
+    {
+      "id": "big-deal",
+      "name": "Big Deal",
+      "store_title": "Solitaire Daily: Big Deal",
+      "kind": "game",
+      "page": "/big-deal/",
+      "pitch": "One large-print solitaire deal a day.",
+      "description": "The same deal for everyone, checked by computer so it can always be finished. No timer, and unlimited undo.",
+      "icon": "/big-deal/icon.png",
+      "channels": [
+        {
+          "store": "Google Play",
+          "platform": "Android",
+          "status": "review",
+          "url": "https://play.google.com/store/apps/details?id=app.bigdeal.game"
+        }
+      ],
+      "screenshots": [
+        { "src": "/big-deal/shots/01.jpg", "alt": "Large print. One deal a day: a solitaire table with big, clear cards, Deal #16, Gentle Monday, par 165." },
+        { "src": "/big-deal/shots/02.jpg", "alt": "Tap to move. No clock: a hint suggests moving the three of spades to column 3." },
+        { "src": "/big-deal/shots/03.jpg", "alt": "Finish under par for gold: won in 150 moves, par 165, with a gold medal and a 16-day streak." },
+        { "src": "/big-deal/shots/04.jpg", "alt": "Every deal checked by computer: the home screen with today's deal and the last seven days." },
+        { "src": "/big-deal/shots/05.jpg", "alt": "Readable your way: settings for card size, a four-colour deck, high-contrast cards and a left-handed layout." }
+      ],
+      "features": [
+        "Large print, in the card size you like: Normal, Large or Extra large.",
+        "A four-colour deck, high-contrast cards and a left-handed layout, if you want them.",
+        "Tap a card to move it. No clock, and undo as often as you like.",
+        "Finish under par for a gold medal, and keep your streak going.",
+        "Play past deals from the archive.",
+        "Plays fully offline."
+      ],
+      "money": {
+        "title": "Fair and simple",
+        "text": "Free to play, with a few ads that never appear inside a deal. The first hint in each deal is free. Remove all ads is one optional, one-time purchase. No subscription, no in-game currency, no loot boxes."
+      },
+      "legal": {
+        "privacy": "/big-deal/privacy.html",
+        "terms": "/big-deal/terms.html",
+        "delete_data": "/big-deal/delete-data.html"
+      },
+      "support_email": "brandemak@gmail.com"
+    },
+    {
+      "id": "travelcharika",
+      "name": "TravelCharika",
+      "kind": "travel",
+      "page": "/travelcharika/",
+      "pitch": "When to go, and where to book.",
+      "description": "A travel website and Android app. Each place's twelve months are scored from ten years of measured weather and the holidays that crowd it, so you can see the best time to go.",
+      "icon": "/travelcharika/icon.png",
+      "channels": [
+        {
+          "store": "travelcharika.com",
+          "platform": "Web",
+          "status": "live",
+          "url": "https://travelcharika.com",
+          "label": "Website",
+          "cta": "Visit travelcharika.com"
+        },
+        {
+          "store": "Google Play",
+          "platform": "Android",
+          "status": "testing",
+          "url": "https://play.google.com/store/apps/details?id=com.travelcharika.app",
+          "label": "Android app in testing",
+          "cta": "Android app on Google Play (in testing)"
+        }
+      ],
+      "screenshots": [],
+      "features": [
+        "Every place's twelve months, scored from ten years of measured weather and the public holidays that crowd it.",
+        "Which months are good for hiking, the sea, skiing and the northern lights.",
+        "The big festivals, carnivals and markets, month by month.",
+        "Where to book, once you know when to go."
+      ],
+      "money": {
+        "title": "How it's paid for",
+        "text": "TravelCharika is free to use. Some of the booking sites it lists pay it a commission; that never decides which sites are listed or in what order."
+      },
+      "legal": {
+        "privacy": "https://travelcharika.com/privacy/",
+        "terms": "https://travelcharika.com/terms/"
+      }
+    }
+  ],
+  "more_card": {
+    "title": "More to come",
+    "text": "New games join the camp here when they're ready."
+  }
+}
