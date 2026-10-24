@@ -169,3 +169,16 @@ footer nav a {
   padding: 6px 14px;
   border-radius: 999px;
 }
+
+/* The company home page: an introduction, one card per product with its
+   icon beside it, and the company's details. */
+.intro .lead { font-size: 1.15rem; color: var(--muted); margin: 0; }
+.product { display: flex; gap: 18px; align-items: flex-start; margin-top: 16px; }
+.product img.icon { width: 72px; height: 72px; border-radius: 18px; box-shadow: var(--shadow); flex: none; }
+.product h2 { margin: 0; font-size: 1.5rem; }
+.product .lead { color: var(--muted); margin: 0.2em 0 0.3em; }
+.product .meta { margin: 0 0 0.8em; }
+.product .links { margin-top: 0.6em; }
+.company { margin-top: 16px; }
+.company h2 { margin-top: 0; }
+@media (max-width: 520px) { .product { flex-direction: column; gap: 10px; } }
