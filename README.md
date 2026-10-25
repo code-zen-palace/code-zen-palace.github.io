@@ -25,6 +25,12 @@ Generated files (do not edit by hand; edit `src/` and rebuild): `index.html`,
 `index.html` (`tiny-acres/`, `big-deal/`, `travelcharika/`), the six legal
 pages, `sitemap.xml`, `robots.txt`.
 
+Copied, not generated: `tiny-acres/play/` is Tiny Acres' web game (today's
+acre in the browser), a Flutter web build copied here by `tools/build_web.sh`
+in the tiny-acres repo. `tools/build.py` never writes there; rebuild it from
+that repo, never by hand. Its own `index.html` uses the game's look, not the
+site's template.
+
 ## Rebuild and preview
 
 ```sh
@@ -77,7 +83,8 @@ the `more_card` (delete that key to hide the "More to come" card).
 The apps and store listings link to these; keep the paths and the legal text:
 `/privacy.html`, `/terms.html`, `/delete-data.html` (Tiny Acres),
 `/big-deal/privacy.html`, `/big-deal/terms.html`, `/big-deal/delete-data.html`,
-and `/app-ads.txt` (AdMob). Also keep `icon.png`, `shots/`, `big-deal/icon.png`
+and `/app-ads.txt` (AdMob). `/tiny-acres/play/` too: every result shared from
+Tiny Acres links there. Also keep `icon.png`, `shots/`, `big-deal/icon.png`
 and `travelcharika/icon.png`, which other places may link.
 
 ## Brand rules in one paragraph
