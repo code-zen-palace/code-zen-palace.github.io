@@ -15,6 +15,14 @@
           "status": "live",
           "url": "https://play.google.com/store/apps/details?id=app.tinyacres.game"
         },
+        {
+          "store": "the web",
+          "platform": "Web",
+          "status": "live",
+          "label": "Play in your browser",
+          "cta": "Play today's acre in your browser",
+          "url": "/tiny-acres/play/"
+        },
         { "store": "App Store", "platform": "iPhone", "status": "coming" }
       ],
       "screenshots": [
