@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Today's acre on the web (lib/main_web.dart). Built and copied into
+       the site by tools/build_web.sh, which sets this base to
+       /tiny-acres/play/. -->
+  <base href="/tiny-acres/play/">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tiny Acres · Play today's acre</title>
+  <meta name="description" content="Play today's Tiny Acres in your browser: place the day's hex tiles, match their edges, close forests and lakes, and beat the target. Free, nothing to sign up for. The same acre as the app.">
+  <meta name="theme-color" content="#BFE3FA" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1C2B45" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://primekampllc.com/tiny-acres/play/">
+
+  <!-- The preview a shared link shows in messages and posts. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tiny Acres">
+  <meta property="og:title" content="Play today's Tiny Acre">
+  <meta property="og:description" content="A calm hex-tile puzzle, new every day, the same for everyone. Play it here in your browser.">
+  <meta property="og:url" content="https://primekampllc.com/tiny-acres/play/">
+  <meta property="og:image" content="https://primekampllc.com/tiny-acres/play/og-image.jpg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="Tiny Acres, a calm daily tile puzzle: an island of hex tiles with forests, fields, lakes, villages and mountains.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    :root {
+      color-scheme: light dark;
+      --sky: linear-gradient(#BFE3FA, #E6F4EE 55%, #FBF5E8);
+      --ink: #1F4A33;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --sky: linear-gradient(#1C2B45, #1B2230 55%, #1B1F22);
+        --ink: #E4F2E7;
+      }
+    }
+    html, body { height: 100%; margin: 0; }
+    body { background: var(--sky); background-attachment: fixed; color: var(--ink); }
+    #splash {
+      position: fixed; inset: 0;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 6px; padding: 16px; text-align: center;
+      font-family: ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    #splash img { width: 88px; height: 88px; border-radius: 22px; box-shadow: 0 6px 18px rgba(31, 74, 51, 0.18); }
+    #splash .name { margin: 14px 0 0; font-size: 28px; font-weight: 700; }
+    #splash .note { margin: 0; font-size: 16px; opacity: 0.8; }
+    #splash .dots { display: flex; gap: 8px; margin-top: 14px; }
+    #splash .dots i {
+      width: 10px; height: 11px; background: currentColor; opacity: 0.25;
+      clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+      animation: grow 1.2s ease-in-out infinite;
+    }
+    #splash .dots i:nth-child(2) { animation-delay: 0.2s; }
+    #splash .dots i:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes grow { 50% { opacity: 0.8; transform: scale(1.25); } }
+    @media (prefers-reduced-motion: reduce) {
+      #splash .dots i { animation: none; opacity: 0.5; }
+    }
+    #splash a { color: inherit; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <!-- Shown until the game draws its first frame, then removed
+       (flutter_bootstrap.js). -->
+  <div id="splash" role="status">
+    <img src="icons/Icon-192.png" alt="">
+    <p class="name">Tiny Acres</p>
+    <p class="note" id="splash-note">Getting today's acre ready…</p>
+    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+    <noscript>
+      <p class="note">The browser game needs JavaScript.
+        <a href="https://play.google.com/store/apps/details?id=app.tinyacres.game">Get Tiny Acres on Google Play</a></p>
+    </noscript>
+  </div>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
