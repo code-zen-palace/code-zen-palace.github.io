@@ -26,11 +26,11 @@
         { "store": "App Store", "platform": "iPhone", "status": "coming" }
       ],
       "screenshots": [
-        { "src": "/shots/01.jpg", "alt": "Match edges. Close regions. Today's acre: hex tiles of forest, fields and water, with a forest region closed for five bonus points." },
-        { "src": "/shots/02.jpg", "alt": "Cosy by day or by night: the same board in dark mode." },
-        { "src": "/shots/03.jpg", "alt": "Beat the day's target: an acre complete, Legendary, 63 of 59 points." },
-        { "src": "/shots/04.jpg", "alt": "A new tiny acre every day: the home screen with today's acre done and a streak." },
-        { "src": "/shots/05.jpg", "alt": "Celebrate the seasons: the home screen dressed for Christmas." }
+        { "src": "/shots/01.jpg", "alt": "Every day, a new acre for your world: today's acre played inside your land, a tile hovering at its edge with a gold seam hint, earlier acres and wildflower meadows all round." },
+        { "src": "/shots/02.jpg", "alt": "Grow a little world, day by day: Your world, 37 acres in one round land with wildflower meadows, windmills, a lighthouse, orchards and beehives." },
+        { "src": "/shots/03.jpg", "alt": "Earn landmarks as your land grows: a Golden Acre, 64 of 64, nine seams with your land, and a lighthouse, an orchard and beehives now standing on it." },
+        { "src": "/shots/04.jpg", "alt": "Match edges. Close regions. Part-way through today's acre: a lake has just closed for four bonus points and a little boat sails on it." },
+        { "src": "/shots/05.jpg", "alt": "Celebrate the seasons: the home screen on a Diwali night under a starry sky, with a lamp and a marigold by the little island." }
       ],
       "features": [
         "Match forests with forests and lakes with lakes, and seal off regions for bonus points.",
