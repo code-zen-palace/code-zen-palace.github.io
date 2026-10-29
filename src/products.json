@@ -8,6 +8,7 @@
       "pitch": "A calm daily hex-tile puzzle.",
       "description": "The same stack of tiles for everyone; no lives, no timers, no way to lose.",
       "icon": "/icon.png",
+      "share_image": { "src": "/shots/tiny-acres-share.jpg", "alt": "Tiny Acres, a calm daily tile puzzle: no lives, no timers, no way to lose. A small land of hex tiles with forests, lakes, cottages and snowy peaks." },
       "channels": [
         {
           "store": "Google Play",

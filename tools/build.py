@@ -134,6 +134,10 @@ def check_products(products):
         if not (p["page"].startswith("/") and p["page"].endswith("/")):
             raise BuildError(f"{where}: page must look like /name/")
         local_file(p["icon"], where)
+        if "share_image" in p:
+            local_file(p["share_image"].get("src", ""), where)
+            if not p["share_image"].get("alt"):
+                raise BuildError(f"{where}: share_image needs alt text")
         for shot in p.get("screenshots", []):
             local_file(shot["src"], where)
             if not shot.get("alt"):
@@ -360,6 +364,8 @@ def product_page(p, site):
         "path": p["page"],
         "nav": nav,
     }
+    if p.get("share_image"):
+        meta["share_image"] = p["share_image"]
     return meta, body
 
 
@@ -438,6 +444,9 @@ def render(base, site, meta, body, css_version, extra_head=""):
     path = meta["path"]
     section = meta.get("nav", path)
     canonical = site["base_url"] + path
+    # The link-preview picture: a product's own, or the company's.
+    share = meta.get("share_image") or {"src": site["share_image"], "alt": site["share_image_alt"]}
+    width, height = image_size(local_file(share["src"], path))
     return fill(
         base,
         {
@@ -445,8 +454,10 @@ def render(base, site, meta, body, css_version, extra_head=""):
             "title": esc(meta["title"]),
             "description": esc(meta.get("description", "")),
             "canonical": esc(canonical),
-            "share_image": esc(site["base_url"] + site["share_image"]),
-            "share_image_alt": esc(site["share_image_alt"]),
+            "share_image": esc(site["base_url"] + share["src"]),
+            "share_image_alt": esc(share["alt"]),
+            "share_image_width": str(width),
+            "share_image_height": str(height),
             "css_version": css_version,
             "extra_head": extra_head,
             "header_logo": "/assets/logo/primekamp_horizontal_on-light.svg"
