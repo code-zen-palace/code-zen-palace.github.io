@@ -375,12 +375,14 @@ def product_page(p, site):
 def company_address(site):
     a = site["address"]
     mail = esc(site["email"])
+    tel = esc("+" + "".join(c for c in site["phone"] if c.isdigit()))
     return f"""      <address class="company">
         <p><strong>{esc(site['legal_name'])}</strong><br>
         {esc(site['registration'])}</p>
         <p>{esc(a['street'])}<br>
         {esc(a['city'])}, {esc(a['region'])} {esc(a['postal_code'])}, {esc(a['country'])}</p>
-        <p><a href="mailto:{mail}">{mail}</a></p>
+        <p><a href="mailto:{mail}">{mail}</a><br>
+        <a href="tel:{tel}">{esc(site['phone'])}</a></p>
       </address>"""
 
 
