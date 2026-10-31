@@ -39,6 +39,22 @@ LEGAL_DOCS = [
     ("delete_data", "Delete my data"),
 ]
 PLACEHOLDER = re.compile(r"\{\{(\w+)\}\}")
+# A product's "update": something coming in its next update ("next") or
+# just out ("new"). Changing that one status changes every line below.
+UPDATE_WORDS = {
+    "next": {
+        "badge": "In the next update",
+        "chip": "{name}: in the next update",
+        "line": "{name} arrives in the next update: {summary}.",
+        "alt": " {name} arrives in the next update.",
+    },
+    "new": {
+        "badge": "New",
+        "chip": "New: {name}",
+        "line": "New: {name}. {Summary}.",
+        "alt": "",
+    },
+}
 
 
 class BuildError(Exception):
@@ -142,6 +158,15 @@ def check_products(products):
             local_file(shot["src"], where)
             if not shot.get("alt"):
                 raise BuildError(f"{where}: screenshot {shot['src']} needs alt text")
+            if shot.get("update") and "update" not in p:
+                raise BuildError(f"{where}: screenshot {shot['src']} is marked update, but there is no update")
+        if "update" in p:
+            u = p["update"]
+            if u.get("status") not in UPDATE_WORDS:
+                raise BuildError(f"{where}: update status must be one of {sorted(UPDATE_WORDS)}")
+            for key in ("name", "summary", "text"):
+                if not u.get(key):
+                    raise BuildError(f"{where}: update needs {key}")
         for c in p["channels"]:
             if c.get("status") not in STATUSES:
                 raise BuildError(f"{where}: channel status must be one of {sorted(STATUSES)}")
@@ -171,11 +196,25 @@ def channel_cta(c):
     return f"{c['platform']} app on {c['store']} (in testing)"
 
 
+def update_words(p, key):
+    """The product's update in words: badge, chip, line or alt (see UPDATE_WORDS)."""
+    u = p["update"]
+    summary = u["summary"]
+    return UPDATE_WORDS[u["status"]][key].format(
+        name=u["name"], summary=summary, Summary=summary[:1].upper() + summary[1:]
+    )
+
+
 def status_spans(p):
-    return " ".join(
+    spans = [
         f'<span class="status status--{c["status"]}">{esc(channel_label(c))}</span>'
         for c in p["channels"]
-    )
+    ]
+    if "update" in p:
+        spans.append(
+            f'<span class="status status--{p["update"]["status"]}">{esc(update_words(p, "chip"))}</span>'
+        )
+    return " ".join(spans)
 
 
 def product_card(p):
@@ -203,12 +242,15 @@ def game_row(p):
     for c in p["channels"]:
         if c["status"] in LINKED:
             links.append(f'<a class="text-link" href="{esc(c["url"])}">{esc(channel_cta(c))}</a>')
+    update_line = ""
+    if "update" in p:
+        update_line = f"\n          <p>{esc(update_words(p, 'line'))}</p>"
     return f"""      <li class="pk-card game-row">
         <img class="app-icon" src="{esc(p['icon'])}" alt="" width="96" height="96">
         <div class="game-row__body">
           <h2><a href="{esc(p['page'])}">{esc(p['name'])}</a></h2>
           <p class="game-row__pitch">{esc(p['pitch'])}</p>
-          <p>{esc(p['description'])}</p>
+          <p>{esc(p['description'])}</p>{update_line}
           <p class="card__meta">{status_spans(p)}</p>
           <p class="link-row">{' '.join(links)}</p>
         </div>
@@ -290,9 +332,15 @@ def product_page(p, site):
         items = []
         for shot in p["screenshots"]:
             w, h = image_size(local_file(shot["src"], p["id"]))
+            alt, note = shot["alt"], ""
+            # A picture of the update says so: in its alt text, and in a
+            # line under it that screen readers skip (the alt has it).
+            if shot.get("update"):
+                alt += update_words(p, "alt")
+                note = f'<p class="shot-note" aria-hidden="true">{esc(update_words(p, "chip"))}</p>'
             items.append(
-                f'      <li><img src="{esc(shot["src"])}" alt="{esc(shot["alt"])}" '
-                f'width="{w}" height="{h}" loading="lazy"></li>'
+                f'      <li><img src="{esc(shot["src"])}" alt="{esc(alt)}" '
+                f'width="{w}" height="{h}" loading="lazy">{note}</li>'
             )
         shots = f"""
 <section class="section section--tight" aria-label="Screenshots">
@@ -300,6 +348,22 @@ def product_page(p, site):
     <ul class="shots">
 {chr(10).join(items)}
     </ul>
+  </div>
+</section>
+"""
+
+    update_html = ""
+    if "update" in p:
+        u = p["update"]
+        anchor = re.sub(r"[^a-z0-9]+", "-", u["name"].lower()).strip("-")
+        update_html = f"""
+<section class="section section--tight" aria-labelledby="{anchor}">
+  <div class="wrap">
+    <div class="pk-card panel update">
+      <p class="card__meta"><span class="status status--{u['status']}">{esc(update_words(p, 'badge'))}</span></p>
+      <h2 id="{anchor}">{esc(u['name'])}</h2>
+      <p>{esc(u['text'])}</p>
+    </div>
   </div>
 </section>
 """
@@ -335,7 +399,7 @@ def product_page(p, site):
     </div>
   </div>
 </section>
-{shots}
+{shots}{update_html}
 <section class="section section--tight">
   <div class="wrap duo">
     <div class="pk-card panel">
@@ -360,7 +424,8 @@ def product_page(p, site):
 """
     meta = {
         "title": f"{p['name']} · {p['pitch'].rstrip('.')}",
-        "description": f"{p['name']}: {p['pitch']} {p['description']}",
+        "description": f"{p['name']}: {p['pitch']} {p['description']}"
+        + (f" {update_words(p, 'line')}" if "update" in p else ""),
         "path": p["page"],
         "nav": nav,
     }

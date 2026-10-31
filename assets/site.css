@@ -378,7 +378,8 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .card > .card__meta { margin: auto 8px 0; padding-top: 14px; }
 
-/* A pixel before each status: Spark when out, Blaze when close, Smoke when coming. */
+/* A pixel before each status: Spark when out, Blaze when close, Smoke when coming.
+   An update (products.json "update"): Blaze while it is next, Spark once new. */
 .status { display: inline-flex; align-items: center; gap: 8px; }
 .status::before {
   content: "";
@@ -388,9 +389,11 @@ a:hover { text-decoration-thickness: 2px; }
   border-radius: 2px;
   background: var(--pk-text-muted);
 }
-.status--live::before { background: #FFC83D; }
+.status--live::before,
+.status--new::before { background: #FFC83D; }
 .status--review::before,
-.status--testing::before { background: #FF8A2D; }
+.status--testing::before,
+.status--next::before { background: #FF8A2D; }
 
 .card--more { border-style: dashed; background: transparent; }
 
@@ -549,7 +552,13 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .shots img { display: block; width: 100%; border-radius: 12px; border: 1px solid var(--pk-border); }
 @media (min-width: 640px) { .shots { grid-template-columns: repeat(3, 1fr); gap: 16px; } }
-@media (min-width: 1000px) { .shots { grid-template-columns: repeat(5, 1fr); } }
+/* Wide screens: every picture on one row (five or six). */
+@media (min-width: 1000px) { .shots { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); } }
+/* Under a picture of an update: what the alt text says, for sighted visitors. */
+.shot-note { margin: 8px 0 0; font-size: 0.8125rem; line-height: 1.4; font-weight: 600; color: var(--pk-text-muted); }
+
+.update .card__meta { margin-bottom: 8px; }
+.update p:last-child { margin-bottom: 0; color: var(--pk-text-secondary); max-width: 44rem; }
 
 .pixel-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
 .pixel-list li { position: relative; padding-left: 24px; color: var(--pk-text-secondary); }

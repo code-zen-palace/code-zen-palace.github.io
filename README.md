@@ -57,7 +57,8 @@ through the server, not by opening files.
    | `kind` | `game`, `travel` or `other` (games also appear on `/games/`) |
    | `page` | Its page on this site, like `/island-rules/` |
    | `pitch` | One line; `description` a sentence or two |
-   | `icon`, `screenshots` | Paths from the site root; every screenshot needs `alt` text |
+   | `icon`, `screenshots` | Paths from the site root; every screenshot needs `alt` text (`"update": true` marks a picture of the `update`) |
+   | `update` | Optional: something in the next update or just out: `status` (`next` or `new`), `name`, `summary` (a short clause), `text` |
    | `channels` | Where to get it: `store`, `platform`, `status`, `url` (and optional `label`, `cta`) |
    | `features`, `money` | The "What it's like" list and the "Fair and simple" note |
    | `legal` | `privacy`, `terms`, `delete_data` URLs (on this site or elsewhere) |
@@ -69,6 +70,16 @@ through the server, not by opening files.
    `coming` (being made: "iPhone: coming").
    **To launch Big Deal on Google Play**, change its channel's `"status": "review"`
    to `"live"`; the Play URL is already there.
+
+   An `update` with `"status": "next"` shows "In the next update" on the
+   product's page (its own panel), "<name>: in the next update" beside the
+   store links (also on the home and Games cards), a line on the Games page,
+   the meta description, and, on each picture marked `"update": true`, a note
+   under it and "<name> arrives in the next update." at the end of its alt
+   text. `"new"` says "New" in their place and drops the alt-text sentence.
+   **When Tiny Acres 0.2.0 is in
+   the stores**, change its update's `"status": "next"` to `"new"` (the one
+   line for Worlds) and rebuild.
 3. If its legal pages live on this site, copy each one's text into
    `src/legal/<id>/privacy.html` (and `terms.html`, `delete-data.html`) with
    front matter giving `title`, `path` (the URL, which must match `legal` in
