@@ -12,8 +12,8 @@
       "update": {
         "status": "next",
         "name": "Worlds",
-        "summary": "piece together landscapes, one acre at a time",
-        "text": "Piece together three landscapes, Meadow Valley, Lakeside and Snowy Mountains, one acre at a time. Each acre is cut into hexagon pieces with one right place: hold a piece over a gap and gold sides show where it fits. A free hint each level, and every area is free. Worlds is in the apps; the web page stays the daily puzzle."
+        "summary": "piece together four landscapes, one acre at a time",
+        "text": "Four worlds to piece together, one acre at a time: Meadow Valley in spring, Lakeside in summer, the Snowy Mountains in winter and Russet Vale in autumn, seven acres each, 28 in all. Each acre is cut into hexagon pieces with one right place: hold a piece over a gap and gold sides show where it fits. A country lane winds through every world, a little cart rolls on each time you finish an acre, and spring petals, summer fireflies, winter snow or autumn leaves drift by (or turn the weather off). One free hint every acre, and every world is free. Worlds is in the apps; the web page stays the daily puzzle."
       },
       "channels": [
         {
@@ -35,10 +35,10 @@
       "screenshots": [
         { "src": "/shots/01.jpg", "alt": "One cozy puzzle a day: today's acre part-way, a forest tile with a lake edge tried in a cell beside woods, lakes, fields, villages and mountains, the cells it could go in glowing. Score 36, target 68." },
         { "src": "/shots/02.jpg", "alt": "Match the edges, grow a landscape: today's acre finished, its gaps grown in, so woods, lakes, fields, villages and mountains run on into one another. Score 79, target 68." },
-        { "src": "/shots/03.jpg", "alt": "A path through three landscapes: Worlds' path through Meadow Valley, 3 of 7 acres done and Level 4 next.", "update": true },
-        { "src": "/shots/04.jpg", "alt": "Gold sides show where it fits: a Worlds level in Meadow Valley, a river piece held over its gap with gold sides, a dotted piece not yet in place, 9 of 19 in place.", "update": true },
-        { "src": "/shots/05.jpg", "alt": "Seven acres, one picture: Meadow Valley so far, three acres finished, the next one glowing gold and empty, the rest hidden in fog.", "update": true },
-        { "src": "/shots/06.jpg", "alt": "Keep every finished area: the Worlds gallery, Snowy Mountains and Lakeside each shown whole with a share button.", "update": true }
+        { "src": "/shots/03.jpg", "alt": "Piece together four landscapes: Acre 4 of World 1, Meadow Valley, a river piece over its gap with gold sides, a dotted piece not yet in place, 9 of 19 in place.", "update": true },
+        { "src": "/shots/04.jpg", "alt": "A country lane through every world: Meadow Valley's lane, acres 1 to 3 finished, acre 4 gold with a flag and a little cart, spring petals in the air.", "update": true },
+        { "src": "/shots/05.jpg", "alt": "Four worlds, four seasons: all worlds on one screen, Meadow Valley in spring with 3 of 7 acres; Lakeside, the Snowy Mountains and Russet Vale in mist, each opening after the one before.", "update": true },
+        { "src": "/shots/06.jpg", "alt": "Keep every finished world: the gallery, Russet Vale in autumn and the Snowy Mountains, each whole with a share button.", "update": true }
       ],
       "features": [
         "Match forests with forests and lakes with lakes, and close regions for bonus points.",
