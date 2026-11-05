@@ -107,7 +107,7 @@
       "kind": "travel",
       "page": "/travelcharika/",
       "pitch": "When to go, and where to book.",
-      "description": "A travel website and Android app. Each place's twelve months are scored from ten years of measured weather and the holidays that crowd it, so you can see the best time to go.",
+      "description": "A travel website and apps for Android and iPhone. Each place's twelve months are scored from ten years of measured weather and the holidays that crowd it, so you can see the best time to go.",
       "icon": "/travelcharika/icon.png",
       "channels": [
         {
@@ -121,10 +121,18 @@
         {
           "store": "Google Play",
           "platform": "Android",
-          "status": "testing",
+          "status": "live",
           "url": "https://play.google.com/store/apps/details?id=com.travelcharika.app",
-          "label": "Android app in testing",
-          "cta": "Android app on Google Play (in testing)"
+          "label": "Android app",
+          "cta": "Android app on Google Play"
+        },
+        {
+          "store": "App Store",
+          "platform": "iPhone",
+          "status": "live",
+          "url": "https://apps.apple.com/app/id6827955614",
+          "label": "iPhone app",
+          "cta": "iPhone app on the App Store"
         }
       ],
       "screenshots": [],
