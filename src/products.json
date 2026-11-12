@@ -23,14 +23,21 @@
           "url": "https://play.google.com/store/apps/details?id=app.tinyacres.game"
         },
         {
+          "store": "App Store",
+          "platform": "iPhone",
+          "status": "live",
+          "url": "https://apps.apple.com/app/id6828786988",
+          "label": "On the App Store",
+          "cta": "Get it on the App Store"
+        },
+        {
           "store": "the web",
           "platform": "Web",
           "status": "live",
           "label": "Play in your browser",
           "cta": "Play today's acre in your browser",
           "url": "/tiny-acres/play/"
-        },
-        { "store": "App Store", "platform": "iPhone", "status": "coming" }
+        }
       ],
       "screenshots": [
         { "src": "/shots/01.jpg", "alt": "One cozy puzzle a day: today's acre part-way, a forest tile with a lake edge tried in a cell beside woods, lakes, fields, villages and mountains, the cells it could go in glowing. Score 36, target 68." },
