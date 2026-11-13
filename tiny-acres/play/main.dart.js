@@ -119281,12 +119281,16 @@ td(a){return this.aIu(a)},
 aIu(a){var s=0,r=A.v(t.y),q,p=2,o=[],n,m,l,k,j
 var $async$td=A.w(function(b,c){if(b===1){o.push(c)
 s=p}for(;;)switch(s){case 0:p=4
-m=A.fP(a,0,null)
 l=A.aJ()
-s=7
-return A.p(A.aVB(m,B.a_F,l===B.N?"_self":null),$async$td)
-case 7:m=c
-q=m
+n=l===B.N?"_self":null
+l=J.c(n,"_self")
+if(l)v.G.location.assign(a)
+if(l){q=!0
+s=1
+break}s=7
+return A.p(A.aVB(A.fP(a,0,null),B.a_F,n),$async$td)
+case 7:l=c
+q=l
 s=1
 break
 p=2
@@ -119294,8 +119298,8 @@ s=6
 break
 case 4:p=3
 j=o.pop()
-n=A.aa(j)
-A.ks().$1("link failed: "+A.m(n))
+m=A.aa(j)
+A.ks().$1("link failed: "+A.m(m))
 q=!1
 s=1
 break
