@@ -665,3 +665,7 @@ a:hover { text-decoration-thickness: 2px; }
   .footer-nav { justify-self: end; }
   .site-footer__legal { grid-column: 1 / -1; }
 }
+
+/* A product's main picture under its head (Tiny Acres' floating island, 2026-11-23). */
+.product-hero { margin: 1.5rem auto 0; max-width: 720px; }
+.product-hero img { display: block; width: 100%; height: auto; }

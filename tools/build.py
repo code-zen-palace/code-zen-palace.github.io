@@ -108,8 +108,17 @@ def out_file(path):
 
 
 def image_size(path):
-    """(width, height) of a PNG or JPEG file."""
+    """(width, height) of a PNG, JPEG or WebP file."""
     data = path.read_bytes()
+    if data[:4] == b"RIFF" and data[8:12] == b"WEBP":
+        kind = data[12:16]
+        if kind == b"VP8X":
+            return (int.from_bytes(data[24:27], "little") + 1, int.from_bytes(data[27:30], "little") + 1)
+        if kind == b"VP8L":
+            b = int.from_bytes(data[21:25], "little")
+            return ((b & 0x3FFF) + 1, ((b >> 14) & 0x3FFF) + 1)
+        if kind == b"VP8 ":
+            return (int.from_bytes(data[26:28], "little") & 0x3FFF, int.from_bytes(data[28:30], "little") & 0x3FFF)
     if data[:8] == b"\x89PNG\r\n\x1a\n":
         return struct.unpack(">II", data[16:24])
     if data[:2] == b"\xff\xd8":
@@ -120,7 +129,7 @@ def image_size(path):
                 height, width = struct.unpack(">HH", data[i + 5 : i + 9])
                 return width, height
             i += 2 + length
-    raise BuildError(f"{path.relative_to(ROOT)}: not a PNG or JPEG")
+    raise BuildError(f"{path.relative_to(ROOT)}: not a PNG, JPEG or WebP")
 
 
 def local_file(url, where):
@@ -154,6 +163,10 @@ def check_products(products):
             local_file(p["share_image"].get("src", ""), where)
             if not p["share_image"].get("alt"):
                 raise BuildError(f"{where}: share_image needs alt text")
+        if "hero_image" in p:
+            local_file(p["hero_image"].get("src", ""), where)
+            if not p["hero_image"].get("alt"):
+                raise BuildError(f"{where}: hero_image needs alt text")
         for shot in p.get("screenshots", []):
             local_file(shot["src"], where)
             if not shot.get("alt"):
@@ -352,6 +365,12 @@ def product_page(p, site):
 </section>
 """
 
+    hero = ""
+    if p.get("hero_image"):
+        hw, hh = image_size(local_file(p["hero_image"]["src"], p["id"]))
+        hero = (f'\n    <figure class="product-hero"><img src="{esc(p["hero_image"]["src"])}" '
+                f'alt="{esc(p["hero_image"]["alt"])}" width="{hw}" height="{hh}"></figure>')
+
     update_html = ""
     if "update" in p:
         u = p["update"]
@@ -396,7 +415,7 @@ def product_page(p, site):
     <div class="product-head__about">
       <p>{esc(p['description'])}</p>
       <p class="card__meta">{status_spans(p)}</p>{store_name}{actions_html}
-    </div>
+    </div>{hero}
   </div>
 </section>
 {shots}{update_html}

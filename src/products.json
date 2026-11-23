@@ -8,6 +8,7 @@
       "pitch": "A cozy puzzle a day, in a painted 3D countryside.",
       "description": "One shared puzzle a day: match the edges, and your acre grows into one little landscape. And Worlds: whole landscapes to piece together. No lives, no timers.",
       "icon": "/icon.png",
+      "hero_image": { "src": "/tiny-acres/img/island.webp", "alt": "Tiny Acres: a little floating island with cottages, a windmill, a lake with a sailing boat, wheat fields and sheep." },
       "share_image": { "src": "/shots/tiny-acres-share.jpg", "alt": "Tiny Acres, a cozy puzzle a day: a finished acre in painted 3D, its woods, lakes, fields, cottages and snowy peaks running on into one another." },
       "update": {
         "status": "new",
@@ -40,12 +41,12 @@
         }
       ],
       "screenshots": [
-        { "src": "/shots/01.jpg", "alt": "One cozy puzzle a day: today's acre, Oak Haven, part-way in 3D: a forest tile held over its cell beside a lake, cottages and snowy peaks, hills behind." },
-        { "src": "/shots/02.jpg", "alt": "Match edges, watch it come alive: a forest has just closed on today's acre, birds lift from the 3D trees and bonus points show above the board." },
-        { "src": "/shots/03.jpg", "alt": "Landscape jigsaws to piece together: Worlds, an acre of Meadow Valley in 3D, a river piece over its gap with gold sides, one dotted piece not yet in place." },
-        { "src": "/shots/04.jpg", "alt": "A country lane through every world: Snowbury's snowy lane in 3D, houses and lamps along it, the next acre gold with a flag and a little cart, snow in the air." },
-        { "src": "/shots/05.jpg", "alt": "Worlds for every season: all worlds on one screen, each in its season, Meadow Valley three acres in, then Lakeside, mountains, an autumn vale and a snowy town." },
-        { "src": "/shots/06.jpg", "alt": "A medal for every acre: Oak Haven complete, a gold medal with a burst of confetti, the finished 3D acre above the result card." }
+        { "src": "/shots/01.jpg", "alt": "One cozy puzzle a day: Today's acre, Oak Haven, part-way in 3D: a forest tile held over its cell beside a lake, cottages and snowy peaks, hills behind" },
+        { "src": "/shots/02.jpg", "alt": "Match edges, watch it come alive: a forest has just closed on today's acre: birds lift from the 3D trees and bonus points show above the board" },
+        { "src": "/shots/03.jpg", "alt": "Landscape jigsaws to piece together: Worlds, an acre of Meadow Valley in 3D: a river piece over its gap with gold sides, one dotted piece not yet in place" },
+        { "src": "/shots/04.jpg", "alt": "A country lane through every world: Snowbury's snowy lane in 3D: houses and lamps along it, the next acre gold with a flag and a little cart, snow in the air" },
+        { "src": "/shots/05.jpg", "alt": "Worlds for every season: the gallery of finished worlds, each in its season: Snowbury, a snowy market town, then Russet Vale in autumn" },
+        { "src": "/shots/06.jpg", "alt": "A medal for every acre: Oak Haven complete: Gold on the result card, the finished 3D acre above it under a sunset sky" }
       ],
       "features": [
         "Match forests with forests and lakes with lakes, and close regions for bonus points.",
