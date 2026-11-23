@@ -5,15 +5,15 @@
       "name": "Tiny Acres",
       "kind": "game",
       "page": "/tiny-acres/",
-      "pitch": "A calm daily hex-tile puzzle.",
-      "description": "One shared puzzle a day: match the edges, and your acre grows into one landscape. No lives, no timers.",
+      "pitch": "A cozy puzzle a day, in a painted 3D countryside.",
+      "description": "One shared puzzle a day: match the edges, and your acre grows into one little landscape. And Worlds: whole landscapes to piece together. No lives, no timers.",
       "icon": "/icon.png",
-      "share_image": { "src": "/shots/tiny-acres-share.jpg", "alt": "Tiny Acres, a calm daily puzzle: no lives, no timers, no way to lose. A finished acre of natural hex tiles, its woods, lakes, fields, villages and snowy peaks running on into one another." },
+      "share_image": { "src": "/shots/tiny-acres-share.jpg", "alt": "Tiny Acres, a cozy puzzle a day: a finished acre in painted 3D, its woods, lakes, fields, cottages and snowy peaks running on into one another." },
       "update": {
         "status": "new",
-        "name": "Worlds",
-        "summary": "piece together four landscapes, one acre at a time",
-        "text": "Four worlds to piece together, one acre at a time: Meadow Valley in spring, Lakeside in summer, the Snowy Mountains in winter and Russet Vale in autumn, seven acres each, 28 in all. Each acre is cut into hexagon pieces with one right place: hold a piece over a gap and gold sides show where it fits. A country lane winds through every world, a little cart rolls on each time you finish an acre, and spring petals, summer fireflies, winter snow or autumn leaves drift by (or turn the weather off). One free hint every acre, and every world is free. Worlds is in the apps; the web page stays the daily puzzle."
+        "name": "The 3D look",
+        "summary": "every acre and every world, redrawn in painted 3D",
+        "text": "Every tile, every world and the home screen are redrawn in a painted 3D look: woods, wheat fields, lakes, cottages and snow-capped peaks, with a living countryside behind your board. Close a forest and birds lift from the trees; close a lake and a fish leaps; close a village and its windows light up. Each day's acre now has a cozy name of its own, like Hazel Corner. And from Tuesday 24 November, every day's acre has all five terrains, and every day is just as friendly, so any day is a good day to start."
       },
       "channels": [
         {
@@ -40,19 +40,19 @@
         }
       ],
       "screenshots": [
-        { "src": "/shots/01.jpg", "alt": "One cozy puzzle a day: today's acre part-way, a forest tile with a lake edge tried in a cell beside woods, lakes, fields, villages and mountains, the cells it could go in glowing. Score 36, target 68." },
-        { "src": "/shots/02.jpg", "alt": "Match the edges, grow a landscape: today's acre finished, its gaps grown in, so woods, lakes, fields, villages and mountains run on into one another. Score 79, target 68." },
-        { "src": "/shots/03.jpg", "alt": "Piece together four landscapes: Acre 4 of World 1, Meadow Valley, a river piece over its gap with gold sides, a dotted piece not yet in place, 9 of 19 in place.", "update": true },
-        { "src": "/shots/04.jpg", "alt": "A country lane through every world: Meadow Valley's lane, acres 1 to 3 finished, acre 4 gold with a flag and a little cart, spring petals in the air.", "update": true },
-        { "src": "/shots/05.jpg", "alt": "Four worlds, four seasons: all worlds on one screen, Meadow Valley in spring with 3 of 7 acres; Lakeside, the Snowy Mountains and Russet Vale in mist, each opening after the one before.", "update": true },
-        { "src": "/shots/06.jpg", "alt": "Keep every finished world: the gallery, Russet Vale in autumn and the Snowy Mountains, each whole with a share button.", "update": true }
+        { "src": "/shots/01.jpg", "alt": "One cozy puzzle a day: today's acre, Oak Haven, part-way in 3D: a forest tile held over its cell beside a lake, cottages and snowy peaks, hills behind." },
+        { "src": "/shots/02.jpg", "alt": "Match edges, watch it come alive: a forest has just closed on today's acre, birds lift from the 3D trees and bonus points show above the board." },
+        { "src": "/shots/03.jpg", "alt": "Landscape jigsaws to piece together: Worlds, an acre of Meadow Valley in 3D, a river piece over its gap with gold sides, one dotted piece not yet in place." },
+        { "src": "/shots/04.jpg", "alt": "A country lane through every world: Snowbury's snowy lane in 3D, houses and lamps along it, the next acre gold with a flag and a little cart, snow in the air." },
+        { "src": "/shots/05.jpg", "alt": "Worlds for every season: all worlds on one screen, each in its season, Meadow Valley three acres in, then Lakeside, mountains, an autumn vale and a snowy town." },
+        { "src": "/shots/06.jpg", "alt": "A medal for every acre: Oak Haven complete, a gold medal with a burst of confetti, the finished 3D acre above the result card." }
       ],
       "features": [
         "Match forests with forests and lakes with lakes, and close regions for bonus points.",
-        "Natural 3D tiles: wheat rows, woods, cobbled villages and lakes with shallows, and a finished acre grows its gaps into one landscape.",
-        "Beat the day's target, keep your streak, and share your little map. Friends play the same tiles in their browser.",
-        "Cozy acoustic music, seasons and festivals, and a dark mode.",
-        "Plays fully offline."
+        "Painted 3D tiles: woods, wheat fields, lakes, cottages and snow-capped peaks, on a little island with the countryside behind it.",
+        "Beat the day's target for a medal, keep your streak, and share your finished acre. Friends can play the same acre and see both side by side.",
+        "Worlds: landscapes to piece together at your own pace, each in its own season. Every world is free.",
+        "Cozy acoustic music, festivals, tile colours and a dark mode. Plays fully offline."
       ],
       "money": {
         "title": "Fair and simple",
