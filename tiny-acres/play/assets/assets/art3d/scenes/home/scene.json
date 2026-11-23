@@ -1,0 +1,206 @@
+{
+ "version": 1,
+ "screen": "home",
+ "hills": {
+  "image": "hills.webp",
+  "size": [
+   2048,
+   455
+  ],
+  "ground": "#6B9D51"
+ },
+ "clouds": {
+  "image": "clouds.webp",
+  "sprites": {
+   "cloud-wide": [
+    0,
+    0,
+    416,
+    156
+   ],
+   "cloud-tall": [
+    418,
+    0,
+    380,
+    300
+   ],
+   "cloud-small": [
+    800,
+    0,
+    238,
+    148
+   ]
+  }
+ },
+ "hero": {
+  "image": "hero.webp",
+  "size": [
+   1080,
+   842
+  ],
+  "widest": [
+   0.3682,
+   0.0009,
+   0.9954
+  ],
+  "rock": false,
+  "life": {
+   "image": "hero-life.webp",
+   "sprites": {}
+  },
+  "pieces": {
+   "boat": {
+    "sprite": [
+     0,
+     0,
+     78,
+     102
+    ],
+    "move": "bob",
+    "at": [
+     0.2096,
+     0.4067
+    ],
+    "size": [
+     0.0722,
+     0.1211
+    ]
+   },
+   "duck-1": {
+    "sprite": [
+     80,
+     0,
+     62,
+     42
+    ],
+    "move": "waddle",
+    "at": [
+     0.6578,
+     0.458
+    ],
+    "size": [
+     0.0574,
+     0.0499
+    ]
+   },
+   "duck-2": {
+    "sprite": [
+     144,
+     0,
+     56,
+     42
+    ],
+    "move": "waddle",
+    "at": [
+     0.7467,
+     0.4694
+    ],
+    "size": [
+     0.0519,
+     0.0499
+    ]
+   },
+   "duck-3": {
+    "sprite": [
+     202,
+     0,
+     61,
+     37
+    ],
+    "move": "waddle",
+    "at": [
+     0.6963,
+     0.5112
+    ],
+    "size": [
+     0.0565,
+     0.0439
+    ]
+   },
+   "sheep-1": {
+    "sprite": [
+     265,
+     0,
+     56,
+     36
+    ],
+    "move": "graze",
+    "at": [
+     0.8044,
+     0.3259
+    ],
+    "size": [
+     0.0519,
+     0.0428
+    ]
+   },
+   "sheep-2": {
+    "sprite": [
+     323,
+     0,
+     50,
+     37
+    ],
+    "move": "graze",
+    "at": [
+     0.883,
+     0.3097
+    ],
+    "size": [
+     0.0463,
+     0.0439
+    ]
+   },
+   "sheep-3": {
+    "sprite": [
+     375,
+     0,
+     51,
+     34
+    ],
+    "move": "graze",
+    "at": [
+     0.8637,
+     0.3572
+    ],
+    "size": [
+     0.0472,
+     0.0404
+    ]
+   }
+  },
+  "variants": {
+   "sunset": {
+    "image": "hero-sunset.webp",
+    "life": "hero-life-sunset.webp"
+   },
+   "night": {
+    "image": "hero-night.webp",
+    "life": "hero-life-night.webp"
+   },
+   "winter": {
+    "image": "hero-winter.webp",
+    "life": "hero-life-winter.webp"
+   }
+  },
+  "shows": 0.62,
+  "width": 0.96,
+  "spots": [
+   [
+    0.027,
+    0.061,
+    0.095
+   ],
+   [
+    0.916,
+    0.061,
+    0.095
+   ],
+   [
+    0.255,
+    0.053,
+    0.085
+   ]
+  ]
+ }
+}

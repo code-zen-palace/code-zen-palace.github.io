@@ -1,7 +1,7 @@
 {
     "name": "Tiny Acres",
     "short_name": "Tiny Acres",
-    "description": "Play today's Tiny Acres in your browser: a calm hex-tile puzzle, new every day.",
+    "description": "Today's Tiny Acres: a cozy puzzle a day in painted 3D, the same acre for everyone.",
     "start_url": ".",
     "scope": ".",
     "display": "browser",

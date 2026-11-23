@@ -1,0 +1,6 @@
+{
+ "version": 2,
+ "kit": "scenes",
+ "placeholder": true,
+ "note": "No scenery yet: the path's hills, home's hills, clouds, weather sprites and the festival decorations' new art are drawn as today. Lane A fills this folder (docs/design/worlds-art/engine.md)."
+}

@@ -1,0 +1,57 @@
+{
+ "version": 2,
+ "screen": "play",
+ "layers": [
+  {
+   "image": "far.webp",
+   "size": [
+    1600,
+    301
+   ],
+   "bottom": 0.46,
+   "haze": 0.42,
+   "solid": 0.3
+  },
+  {
+   "image": "mid.webp",
+   "size": [
+    1600,
+    679
+   ],
+   "bottom": 0.78,
+   "haze": 0.22,
+   "solid": 0.49
+  },
+  {
+   "image": "near.webp",
+   "size": [
+    1600,
+    574
+   ],
+   "bottom": 1.0,
+   "haze": 0.08,
+   "solid": 0.62
+  }
+ ],
+ "windmill": {
+  "tower": "windmill-tower.webp",
+  "sails": "windmill-sails.webp",
+  "towerSize": [
+   224,
+   399
+  ],
+  "sailsSize": [
+   399,
+   395
+  ],
+  "layer": 0,
+  "x": 0.11,
+  "ground": 0.106,
+  "height": 0.15,
+  "hub": [
+   0.29,
+   0.28
+  ]
+ },
+ "ground": "#686E3B"
+}
