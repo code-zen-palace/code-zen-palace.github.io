@@ -5,16 +5,16 @@
       "name": "Tiny Acres",
       "kind": "game",
       "page": "/tiny-acres/",
-      "pitch": "A cozy puzzle a day, in a painted 3D countryside.",
-      "description": "One shared puzzle a day: match the edges, and your acre grows into one little landscape. And Worlds: whole landscapes to piece together. No lives, no timers.",
+      "pitch": "A cozy puzzle a day, and acres more.",
+      "description": "One shared puzzle a day: match the edges, and your acre grows into one little landscape. Then Acres, numbered acres without end along a country lane, and Worlds: whole landscapes to piece together. No lives, no timers.",
       "icon": "/icon.png",
       "hero_image": { "src": "/tiny-acres/img/island.webp", "alt": "Tiny Acres: a little floating island with cottages, a windmill, a lake with a sailing boat, wheat fields and sheep." },
-      "share_image": { "src": "/shots/tiny-acres-share.jpg", "alt": "Tiny Acres, a cozy puzzle a day: a finished acre in painted 3D, its woods, lakes, fields, cottages and snowy peaks running on into one another." },
+      "share_image": { "src": "/shots/tiny-acres-share.jpg", "alt": "Tiny Acres, a cozy puzzle a day, and acres more: a finished acre in painted 3D floating over Petal Fields' blossom trees and flower strips." },
       "update": {
         "status": "new",
-        "name": "The 3D look",
-        "summary": "every acre and every world, redrawn in painted 3D",
-        "text": "Every tile, every world and the home screen are redrawn in a painted 3D look: woods, wheat fields, lakes, cottages and snow-capped peaks, with a living countryside behind your board. Close a forest and birds lift from the trees; close a lake and a fish leaps; close a village and its windows light up. Each day's acre now has a cozy name of its own, like Hazel Corner. And from Tuesday 24 November, every day's acre has all five terrains, and every day is just as friendly, so any day is a good day to start."
+        "name": "Acres",
+        "summary": "play on, acre after acre, whenever you like",
+        "text": "Acres takes the big card on your home screen: numbered acres without end, played one after another along a country lane. Finish one, tap Next acre, and a little cart rolls on to the next, with a new backdrop behind your board every acre and milestone flags along the way. New worlds too: Sandy Cove, a sunny bay with dunes, beach huts, a lighthouse and a jetty, and Petal Fields, with tulip and lavender strips, blossom groves and a glasshouse. Worlds now call their places by name, like Village square. Choose Easy, Medium or Hard for Acres and Worlds, while today's acre stays the same for everyone. And the look follows your day: bright by day, dark at night. Free play makes way for Acres; your bests stay in Stats."
       },
       "channels": [
         {
@@ -41,23 +41,23 @@
         }
       ],
       "screenshots": [
-        { "src": "/shots/01.jpg", "alt": "One cozy puzzle a day: Today's acre, Oak Haven, part-way in 3D: a forest tile held over its cell beside a lake, cottages and snowy peaks, hills behind" },
-        { "src": "/shots/02.jpg", "alt": "Match edges, watch it come alive: a forest has just closed on today's acre: birds lift from the 3D trees and bonus points show above the board" },
-        { "src": "/shots/03.jpg", "alt": "Landscape jigsaws to piece together: Worlds, an acre of Meadow Valley in 3D: a river piece over its gap with gold sides, one dotted piece not yet in place" },
-        { "src": "/shots/04.jpg", "alt": "A country lane through every world: Snowbury's snowy lane in 3D: houses and lamps along it, the next acre gold with a flag and a little cart, snow in the air" },
-        { "src": "/shots/05.jpg", "alt": "Worlds for every season: the gallery of finished worlds, each in its season: Snowbury, a snowy market town, then Russet Vale in autumn" },
-        { "src": "/shots/06.jpg", "alt": "A medal for every acre: Oak Haven complete: Gold on the result card, the finished 3D acre above it under a sunset sky" }
+        { "src": "/shots/01.jpg", "alt": "A cozy puzzle a day, and acres more: the home at 10:00, Acres' big card on Sandy Cove's lane beside Worlds, then Today's Acre and more", "update": true },
+        { "src": "/shots/02.jpg", "alt": "Match edges, watch it come alive: a forest has just closed on Acre 57, birds lifting, Petal Fields' blossom and flower strips behind the board", "update": true },
+        { "src": "/shots/03.jpg", "alt": "A country lane, acre by acre: the Acres lane along Sandy Cove's beach, medals on the stops behind, the cart at the next acre", "update": true },
+        { "src": "/shots/04.jpg", "alt": "Landscape jigsaws to piece together: Lighthouse rock in Sandy Cove, a piece held over its gap, its matching sides gold" },
+        { "src": "/shots/05.jpg", "alt": "Worlds for every season: Petal Fields' path through tulip and lavender strips, Flower market the next place" },
+        { "src": "/shots/06.jpg", "alt": "Bright by day, cozy by night: today's acre, Oak Haven, in the dark look at night, a village of three just closed" }
       ],
       "features": [
         "Match forests with forests and lakes with lakes, and close regions for bonus points.",
-        "Painted 3D tiles: woods, wheat fields, lakes, cottages and snow-capped peaks, on a little island with the countryside behind it.",
-        "Beat the day's target for a medal, keep your streak, and share your finished acre. Friends can play the same acre and see both side by side.",
-        "Worlds: landscapes to piece together at your own pace, each in its own season. Every world is free.",
-        "Cozy acoustic music, festivals, tile colours and a dark mode. Plays fully offline."
+        "Acres: numbered acres without end along a country lane, a little cart rolling on to the next, and a new backdrop behind your board every time.",
+        "Beat the target for a medal, keep your daily streak, and share your finished acre. Friends can play the same acre and see both side by side.",
+        "Worlds: landscapes to piece together at your own pace, from Meadow Valley in spring to Sandy Cove's sunny bay and the flower strips of Petal Fields. Every world is free.",
+        "Easy, Medium or Hard, painted 3D tiles, cozy acoustic music and festivals; bright by day, dark at night. Plays fully offline."
       ],
       "money": {
         "title": "Fair and simple",
-        "text": "Free to play, with a few ads that never interrupt the daily acre. Tiny Acres Plus is one optional, one-time purchase that removes them. No subscription, no in-game currency, no loot boxes."
+        "text": "Free to play, with a few ads that never interrupt a puzzle. Tiny Acres Plus is one optional, one-time purchase that removes them. No subscription, no in-game currency, no loot boxes."
       },
       "legal": {
         "privacy": "/privacy.html",
